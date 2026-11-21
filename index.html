@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on phones/tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillDNA — Unlock Your Opportunity</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================================
+         BACKGROUND EFFECTS
+         These create the premium "glowing" atmosphere.
+    ========================================================== -->
+
+    <div class="background-grid"></div>
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+
+    <!-- =========================================================
+         SIDEBAR
+    ========================================================== -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+
+            <div class="brand-mark">
+                <span>SD</span>
+            </div>
+
+            <div>
+                <h1>Skill<span>DNA</span></h1>
+                <p>Opportunity Intelligence</p>
+            </div>
+
+        </div>
+
+
+        <nav class="navigation">
+
+            <button class="nav-item active" data-section="overview">
+                <span class="nav-icon">⌂</span>
+                Overview
+            </button>
+
+            <button class="nav-item" data-section="opportunities">
+                <span class="nav-icon">◎</span>
+                Opportunities
+            </button>
+
+            <button class="nav-item" data-section="skills">
+                <span class="nav-icon">◇</span>
+                My Skills
+            </button>
+
+            <button class="nav-item" data-section="simulator">
+                <span class="nav-icon">↗</span>
+                Skill Simulator
+            </button>
+
+            <button class="nav-item" data-section="recruiter">
+                <span class="nav-icon">▣</span>
+                Recruiter
+            </button>
+
+            <button class="nav-item" onclick="openCopilot()"> 
+                 🤖 
+                 <span>SkillDNA Copilot</span> 
+            </button>
+
+        </nav>
+
+
+        <!-- Small sidebar insight -->
+
+        <div class="sidebar-insight">
+
+            <div class="insight-icon">✦</div>
+
+            <div>
+                <strong>Next best move</strong>
+                <p>See which skill can unlock the most opportunities.</p>
+            </div>
+
+        </div>
+
+
+        <div class="sidebar-bottom">
+
+            <div class="system-status">
+                <span class="status-dot"></span>
+                SkillDNA Engine Online
+            </div>
+
+            <div class="user-mini">
+                <div class="avatar">N</div>
+
+                <div>
+                    <strong>Nayeem</strong>
+                    <span>Student Profile</span>
+                </div>
+
+                <span class="more">•••</span>
+            </div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================================================
+         MAIN APPLICATION
+    ========================================================== -->
+
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+            <div class="mobile-brand">
+                <strong>Skill<span>DNA</span></strong>
+            </div>
+
+            <div class="breadcrumb">
+                Student Intelligence
+                <span>/</span>
+                Overview
+            </div>
+
+            <div class="top-actions">
+
+                <button class="icon-button notification-button">
+                    ◌
+                    <span class="notification-dot"></span>
+                </button>
+
+                <div class="profile-pill">
+
+                    <div class="avatar small">N</div>
+
+                    <div>
+                        <strong>Nayeem</strong>
+                        <span>AI / ML Student</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================================
+             OVERVIEW SECTION
+        ====================================================== -->
+
+        <section id="overview" class="page-section active-section">
+
+            <!-- HERO -->
+
+            <div class="hero">
+
+                <div class="hero-copy">
+
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        PERSONAL OPPORTUNITY INTELLIGENCE
+                    </div>
+
+                    <h2>
+                        Your skills are a
+                        <span>DNA.</span>
+                        <br>
+                        Let's unlock what they can become.
+                    </h2>
+
+                    <p>
+                        SkillDNA maps your current abilities against real
+                        opportunities, identifies your skill gaps and tells
+                        you exactly what to learn next.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <button
+                            class="primary-button"
+                            onclick="navigateTo('opportunities')"
+                        >
+                            Explore opportunities
+                            <span>→</span>
+                        </button>
+
+                        <button
+                            class="secondary-button"
+                            onclick="navigateTo('simulator')"
+                        >
+                            Simulate my growth
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO DNA VISUAL -->
+
+                <div class="dna-visual">
+
+                    <div class="dna-orbit orbit-one"></div>
+                    <div class="dna-orbit orbit-two"></div>
+
+                    <div class="dna-core">
+
+                        <div class="core-ring">
+                            <span>DNA</span>
+                        </div>
+
+                        <strong>67%</strong>
+                        <small>Opportunity Ready</small>
+
+                    </div>
+
+
+                    <!-- Floating skill nodes -->
+
+                    <div class="skill-node node-one">
+                        <span>PY</span>
+                        Python
+                    </div>
+
+                    <div class="skill-node node-two">
+                        <span>SQL</span>
+                        SQL
+                    </div>
+
+                    <div class="skill-node node-three">
+                        <span>JS</span>
+                        JavaScript
+                    </div>
+
+                    <div class="skill-node node-four">
+                        <span>C++</span>
+                        C++
+                    </div>
+
+                    <div class="skill-node node-five">
+                        <span>HTML</span>
+                        HTML/CSS
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 INTELLIGENCE CARDS
+            ================================================== -->
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">YOUR INTELLIGENCE</span>
+                    <h3>Where you stand right now</h3>
+                </div>
+
+                <span class="updated">
+                    Updated just now
+                </span>
+
+            </div>
+
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span class="stat-label">Opportunity Match</span>
+                        <span class="stat-icon">◎</span>
+                    </div>
+
+                    <strong class="stat-number">67%</strong>
+
+                    <div class="progress-bar">
+                        <div style="width: 67%"></div>
+                    </div>
+
+                    <p>
+                        Strong foundation with room to grow.
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span class="stat-label">Opportunities</span>
+                        <span class="stat-icon">✦</span>
+                    </div>
+
+                    <strong class="stat-number">12</strong>
+
+                    <div class="stat-trend positive">
+                        +4 unlockable
+                    </div>
+
+                    <p>
+                        Opportunities currently within reach.
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card featured-stat">
+
+                    <div class="stat-top">
+                        <span class="stat-label">Next Best Skill</span>
+                        <span class="stat-icon">↗</span>
+                    </div>
+
+                    <strong class="stat-number">Pandas</strong>
+
+                    <div class="stat-trend">
+                        +14 opportunities
+                    </div>
+
+                    <p>
+                        Highest opportunity impact right now.
+                    </p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+                        <span class="stat-label">Skill Coverage</span>
+                        <span class="stat-icon">◇</span>
+                    </div>
+
+                    <strong class="stat-number">8 / 12</strong>
+
+                    <div class="mini-skills">
+
+                        <span class="mini-skill filled"></span>
+                        <span class="mini-skill filled"></span>
+                        <span class="mini-skill filled"></span>
+                        <span class="mini-skill filled"></span>
+                        <span class="mini-skill filled"></span>
+                        <span class="mini-skill filled"></span>
+                        <span class="mini-skill filled"></span>
+                        <span class="mini-skill filled"></span>
+                        <span class="mini-skill"></span>
+                        <span class="mini-skill"></span>
+                        <span class="mini-skill"></span>
+                        <span class="mini-skill"></span>
+
+                    </div>
+
+                    <p>
+                        Core skills mapped to your profile.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 MAIN DASHBOARD GRID
+            ================================================== -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- OPPORTUNITY RADAR -->
+
+                <div class="panel opportunity-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="section-label">OPPORTUNITY RADAR</span>
+                            <h3>Closest opportunities</h3>
+                        </div>
+
+                        <button
+                            class="text-button"
+                            onclick="navigateTo('opportunities')"
+                        >
+                            View all →
+                        </button>
+
+                    </div>
+
+
+                    <div class="opportunity-list">
+
+
+                        <div class="opportunity-row">
+
+                            <div class="company-logo google">
+                                G
+                            </div>
+
+                            <div class="opportunity-info">
+
+                                <strong>AI / ML Intern</strong>
+
+                                <span>
+                                    Google · Bangalore
+                                </span>
+
+                            </div>
+
+                            <div class="match">
+
+                                <strong>82%</strong>
+
+                                <span>Match</span>
+
+                            </div>
+
+                            <div class="match-bar">
+                                <div style="width:82%"></div>
+                            </div>
+
+                            <button
+                                class="arrow-button"
+                                onclick="openOpportunity('AI / ML Intern')"
+                            >
+                                →
+                            </button>
+
+                        </div>
+
+
+                        <div class="opportunity-row">
+
+                            <div class="company-logo microsoft">
+                                M
+                            </div>
+
+                            <div class="opportunity-info">
+
+                                <strong>Data Analyst Intern</strong>
+
+                                <span>
+                                    Microsoft · Hyderabad
+                                </span>
+
+                            </div>
+
+                            <div class="match">
+
+                                <strong>76%</strong>
+
+                                <span>Match</span>
+
+                            </div>
+
+                            <div class="match-bar">
+                                <div style="width:76%"></div>
+                            </div>
+
+                            <button
+                                class="arrow-button"
+                                onclick="openOpportunity('Data Analyst Intern')"
+                            >
+                                →
+                            </button>
+
+                        </div>
+
+
+                        <div class="opportunity-row">
+
+                            <div class="company-logo amazon">
+                                A
+                            </div>
+
+                            <div class="opportunity-info">
+
+                                <strong>Software Engineering Intern</strong>
+
+                                <span>
+                                    Amazon · Bangalore
+                                </span>
+
+                            </div>
+
+                            <div class="match">
+
+                                <strong>71%</strong>
+
+                                <span>Match</span>
+
+                            </div>
+
+                            <div class="match-bar">
+                                <div style="width:71%"></div>
+                            </div>
+
+                            <button
+                                class="arrow-button"
+                                onclick="openOpportunity('Software Engineering Intern')"
+                            >
+                                →
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- NEXT BEST SKILL -->
+
+                <div class="panel next-skill-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="section-label">INTELLIGENCE ENGINE</span>
+                            <h3>Your next best move</h3>
+                        </div>
+
+                        <div class="spark">✦</div>
+
+                    </div>
+
+
+                    <div class="next-skill-main">
+
+                        <div class="skill-icon-large">
+                            P
+                        </div>
+
+                        <div>
+
+                            <span class="recommended">
+                                RECOMMENDED
+                            </span>
+
+                            <h4>Learn Pandas</h4>
+
+                            <p>
+                                This skill creates the highest increase
+                                in your opportunity readiness.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="impact-box">
+
+                        <div>
+
+                            <span>Current reach</span>
+                            <strong>12 opportunities</strong>
+
+                        </div>
+
+                        <span class="impact-arrow">→</span>
+
+                        <div>
+
+                            <span>After Pandas</span>
+                            <strong class="highlight">26 opportunities</strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="full-button"
+                        onclick="navigateTo('simulator')"
+                    >
+                        See the opportunity impact →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 AI COPILOT
+            ================================================== -->
+
+            <div class="ai-section panel" id="copilotPanel">
+
+                <div class="ai-header">
+
+                    <div class="ai-title">
+
+                        <div class="ai-symbol">
+                            ✦
+                        </div>
+
+                        <div>
+
+                            <span class="section-label">
+                                SKILLDNA COPILOT
+                            </span>
+
+                            <h3>Ask about your career path</h3>
+
+                        </div>
+
+                    </div>
+
+                    <span class="ai-status">
+                        <span></span>
+                        Demo Intelligence
+                    </span>
+
+                </div>
+
+
+                <div class="chat-area" id="chatArea">
+
+                    <div class="ai-message">
+
+                        <div class="chat-avatar">
+                            ✦
+                        </div>
+
+                        <div class="message-bubble">
+
+                            <strong>SkillDNA Copilot</strong>
+
+                            <p>
+                                Based on your current skills, you're
+                                strongest in programming and data foundations.
+                                I can help you understand what to learn next
+                                and which opportunities that could unlock.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="suggestions">
+
+                    <button onclick="askAI('What should I learn next?')">
+                        What should I learn next?
+                    </button>
+
+                    <button onclick="askAI('Why am I missing opportunities?')">
+                        Why am I missing opportunities?
+                    </button>
+
+                    <button onclick="askAI('Show me my strongest career path')">
+                        Show my strongest path
+                    </button>
+
+                </div>
+
+
+                <div class="chat-input">
+
+                    <input
+                        id="aiInput"
+                        type="text"
+                        placeholder="Ask SkillDNA anything about your opportunities..."
+                    >
+
+                    <button onclick="sendAIMessage()">
+                        ↑
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             OPPORTUNITIES SECTION
+        ====================================================== -->
+
+        <section id="opportunities" class="page-section">
+
+            <div class="page-title">
+
+                <div>
+
+                    <span class="section-label">
+                        OPPORTUNITY LANDSCAPE
+                    </span>
+
+                    <h2>Opportunities around you</h2>
+
+                    <p>
+                        Ranked by how closely your current skill DNA matches
+                        each opportunity.
+                    </p>
+
+                </div>
+
+                <button class="secondary-button">
+                    + Add opportunity
+                </button>
+
+            </div>
+
+
+            <div class="filter-bar">
+
+                <button class="filter active">All</button>
+                <button class="filter">AI / ML</button>
+                <button class="filter">Data</button>
+                <button class="filter">Software</button>
+                <button class="filter">Internships</button>
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        id="opportunitySearch"
+                        type="text"
+                        placeholder="Search opportunities..."
+                        onkeyup="filterOpportunities()"
+                    >
+                </div>
+
+            </div>
+
+
+            <div class="opportunity-cards" id="opportunityCards">
+
+                <article class="big-opportunity-card">
+
+                    <div class="company-line">
+
+                        <div class="company-logo google">G</div>
+
+                        <div>
+                            <strong>Google</strong>
+                            <span>Bangalore · Internship</span>
+                        </div>
+
+                        <span class="match-badge">82% match</span>
+
+                    </div>
+
+                    <h3>AI / ML Intern</h3>
+
+                    <p>
+                        Work with machine learning systems, data pipelines
+                        and intelligent products.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span class="tag matched">Python ✓</span>
+                        <span class="tag matched">SQL ✓</span>
+                        <span class="tag matched">Git ✓</span>
+                        <span class="tag missing">ML</span>
+                        <span class="tag missing">Pandas</span>
+
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <span>
+                            <b>2</b> skills missing
+                        </span>
+
+                        <button
+                            onclick="openOpportunity('Google AI / ML Intern')"
+                        >
+                            Analyze match →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="big-opportunity-card">
+
+                    <div class="company-line">
+
+                        <div class="company-logo microsoft">M</div>
+
+                        <div>
+                            <strong>Microsoft</strong>
+                            <span>Hyderabad · Internship</span>
+                        </div>
+
+                        <span class="match-badge">76% match</span>
+
+                    </div>
+
+                    <h3>Data Analyst Intern</h3>
+
+                    <p>
+                        Analyze business data and build insights that
+                        influence product decisions.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span class="tag matched">Python ✓</span>
+                        <span class="tag matched">SQL ✓</span>
+                        <span class="tag missing">Pandas</span>
+                        <span class="tag missing">Power BI</span>
+
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <span>
+                            <b>2</b> skills missing
+                        </span>
+
+                        <button
+                            onclick="openOpportunity('Microsoft Data Analyst')"
+                        >
+                            Analyze match →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="big-opportunity-card">
+
+                    <div class="company-line">
+
+                        <div class="company-logo amazon">A</div>
+
+                        <div>
+                            <strong>Amazon</strong>
+                            <span>Bangalore · Internship</span>
+                        </div>
+
+                        <span class="match-badge">71% match</span>
+
+                    </div>
+
+                    <h3>Software Engineering Intern</h3>
+
+                    <p>
+                        Build scalable software systems and solve
+                        challenging engineering problems.
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span class="tag matched">C++ ✓</span>
+                        <span class="tag matched">Python ✓</span>
+                        <span class="tag matched">HTML ✓</span>
+                        <span class="tag missing">DSA</span>
+                        <span class="tag missing">Git</span>
+
+                    </div>
+
+                    <div class="card-bottom">
+
+                        <span>
+                            <b>2</b> skills missing
+                        </span>
+
+                        <button
+                            onclick="openOpportunity('Amazon SDE Intern')"
+                        >
+                            Analyze match →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SKILLS SECTION
+        ====================================================== -->
+
+        <section id="skills" class="page-section">
+
+            <div class="page-title">
+
+                <div>
+
+                    <span class="section-label">
+                        YOUR SKILL DNA
+                    </span>
+
+                    <h2>Your capability map</h2>
+
+                    <p>
+                        Every skill contributes to a different set of
+                        opportunities.
+                    </p>
+
+                </div>
+
+                <button class="primary-button">
+                    + Add skill
+                </button>
+
+            </div>
+
+
+            <div class="skills-layout">
+
+
+                <div class="panel skill-map">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="section-label">CORE CAPABILITIES</span>
+                            <h3>Skill constellation</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="constellation">
+
+                        <div class="constellation-line line-a"></div>
+                        <div class="constellation-line line-b"></div>
+                        <div class="constellation-line line-c"></div>
+
+                        <div class="constellation-skill center-skill">
+                            <strong>Python</strong>
+                            <span>Advanced</span>
+                        </div>
+
+                        <div class="constellation-skill skill-a">
+                            <strong>SQL</strong>
+                            <span>Strong</span>
+                        </div>
+
+                        <div class="constellation-skill skill-b">
+                            <strong>C++</strong>
+                            <span>Growing</span>
+                        </div>
+
+                        <div class="constellation-skill skill-c">
+                            <strong>HTML/CSS</strong>
+                            <span>Strong</span>
+                        </div>
+
+                        <div class="constellation-skill skill-d">
+                            <strong>JavaScript</strong>
+                            <span>Growing</span>
+                        </div>
+
+                        <div class="constellation-skill skill-e">
+                            <strong>Git</strong>
+                            <span>Beginner</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel skill-gap-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+                            <span class="section-label">SKILL GAPS</span>
+                            <h3>What stands between you and more opportunities</h3>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gap-item">
+
+                        <div class="gap-number">01</div>
+
+                        <div class="gap-content">
+
+                            <strong>Pandas</strong>
+
+                            <p>
+                                Unlocks data analysis and ML opportunities.
+                            </p>
+
+                        </div>
+
+                        <span class="impact high">HIGH IMPACT</span>
+
+                    </div>
+
+
+                    <div class="gap-item">
+
+                        <div class="gap-number">02</div>
+
+                        <div class="gap-content">
+
+                            <strong>Machine Learning</strong>
+
+                            <p>
+                                Required by most AI/ML internship paths.
+                            </p>
+
+                        </div>
+
+                        <span class="impact high">HIGH IMPACT</span>
+
+                    </div>
+
+
+                    <div class="gap-item">
+
+                        <div class="gap-number">03</div>
+
+                        <div class="gap-content">
+
+                            <strong>DSA</strong>
+
+                            <p>
+                                Expands software engineering eligibility.
+                            </p>
+
+                        </div>
+
+                        <span class="impact medium">MEDIUM</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SIMULATOR SECTION
+        ====================================================== -->
+
+        <section id="simulator" class="page-section">
+
+            <div class="page-title">
+
+                <div>
+
+                    <span class="section-label">
+                        OPPORTUNITY UNLOCK SIMULATOR
+                    </span>
+
+                    <h2>What happens if you learn one more skill?</h2>
+
+                    <p>
+                        Experiment with your skill DNA and see how your
+                        opportunity landscape changes.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="simulator-layout">
+
+
+                <div class="panel simulator-controls">
+
+                    <span class="section-label">
+                        ADD A SKILL
+                    </span>
+
+                    <h3>Choose your next move</h3>
+
+                    <p class="muted">
+                        The simulator estimates the opportunities that become
+                        accessible when the selected skill is added.
+                    </p>
+
+
+                    <div class="skill-choice-list">
+
+                        <button
+                            class="skill-choice selected"
+                            data-impact="14"
+                            onclick="selectSkill(this, 'Pandas', 14)"
+                        >
+                            <span>Pandas</span>
+                            <strong>+14</strong>
+                        </button>
+
+                        <button
+                            class="skill-choice"
+                            data-impact="9"
+                            onclick="selectSkill(this, 'Machine Learning', 9)"
+                        >
+                            <span>Machine Learning</span>
+                            <strong>+9</strong>
+                        </button>
+
+                        <button
+                            class="skill-choice"
+                            data-impact="7"
+                            onclick="selectSkill(this, 'DSA', 7)"
+                        >
+                            <span>DSA</span>
+                            <strong>+7</strong>
+                        </button>
+
+                        <button
+                            class="skill-choice"
+                            data-impact="5"
+                            onclick="selectSkill(this, 'Git', 5)"
+                        >
+                            <span>Git</span>
+                            <strong>+5</strong>
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <div class="panel simulator-result">
+
+                    <div class="simulation-header">
+
+                        <div>
+                            <span class="section-label">
+                                PROJECTED IMPACT
+                            </span>
+
+                            <h3>
+                                Adding
+                                <span id="selectedSkill">
+                                    Pandas
+                                </span>
+                            </h3>
+                        </div>
+
+                        <div class="simulation-badge">
+                            LIVE SIMULATION
+                        </div>
+
+                    </div>
+
+
+                    <div class="opportunity-counter">
+
+                        <div class="counter-block">
+
+                            <span>Current</span>
+
+                            <strong>12</strong>
+
+                            <small>opportunities</small>
+
+                        </div>
+
+
+                        <div class="counter-arrow">
+                            →
+                        </div>
+
+
+                        <div class="counter-block projected">
+
+                            <span>Projected</span>
+
+                            <strong id="projectedCount">26</strong>
+
+                            <small>opportunities</small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="growth-chart">
+
+                        <div class="chart-line">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                        <div class="chart-labels">
+                            <span>Current DNA</span>
+                            <span>After skill</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="simulation-insight">
+
+                        <span>✦</span>
+
+                        <p id="simulationText">
+                            Pandas has the highest opportunity impact
+                            among your current skill gaps.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RECRUITER SECTION
+        ====================================================== -->
+
+        <section id="recruiter" class="page-section">
+
+            <div class="page-title">
+
+                <div>
+
+                    <span class="section-label">
+                        RECRUITER INTELLIGENCE
+                    </span>
+
+                    <h2>Find the right candidate faster.</h2>
+
+                    <p>
+                        Match opportunity requirements against student skill
+                        DNA instead of filtering through endless resumes.
+                    </p>
+
+                </div>
+
+                <button class="primary-button">
+                    + Create opportunity
+                </button>
+
+            </div>
+
+
+            <div class="recruiter-banner">
+
+                <div>
+
+                    <span class="section-label">
+                        SELECTED ROLE
+                    </span>
+
+                    <h3>AI / ML Intern</h3>
+
+                    <p>
+                        Python · Machine Learning · Pandas · SQL · Git
+                    </p>
+
+                </div>
+
+                <div class="role-match">
+
+                    <span>Requirements mapped</span>
+
+                    <strong>5</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="candidate-header">
+
+                <div>
+                    <span class="section-label">
+                        CANDIDATE MATCHING
+                    </span>
+                    <h3>Students closest to ready</h3>
+                </div>
+
+                <div class="candidate-count">
+                    24 candidates analyzed
+                </div>
+
+            </div>
+
+
+            <div class="candidate-table">
+
+                <div class="table-head">
+
+                    <span>Candidate</span>
+                    <span>Skill Match</span>
+                    <span>Strengths</span>
+                    <span>Gap</span>
+                    <span></span>
+
+                </div>
+
+
+                <div class="candidate-row">
+
+                    <div class="candidate-name">
+
+                        <div class="avatar">Z</div>
+
+                        <div>
+                            <strong>Zoya Khan</strong>
+                            <span>AI / ML · 2nd Year</span>
+                        </div>
+
+                    </div>
+
+                    <div class="candidate-score">
+                        <strong>92%</strong>
+                        <div><span style="width:92%"></span></div>
+                    </div>
+
+                    <div class="candidate-strength">
+                        Python · ML · Pandas
+                    </div>
+
+                    <div class="candidate-gap">
+                        Git
+                    </div>
+
+                    <button class="view-button">
+                        View →
+                    </button>
+
+                </div>
+
+
+                <div class="candidate-row">
+
+                    <div class="candidate-name">
+
+                        <div class="avatar">A</div>
+
+                        <div>
+                            <strong>Aarav Mehta</strong>
+                            <span>CSE · 2nd Year</span>
+                        </div>
+
+                    </div>
+
+                    <div class="candidate-score">
+                        <strong>81%</strong>
+                        <div><span style="width:81%"></span></div>
+                    </div>
+
+                    <div class="candidate-strength">
+                        Python · SQL · Git
+                    </div>
+
+                    <div class="candidate-gap">
+                        ML
+                    </div>
+
+                    <button class="view-button">
+                        View →
+                    </button>
+
+                </div>
+
+
+                <div class="candidate-row">
+
+                    <div class="candidate-name">
+
+                        <div class="avatar">N</div>
+
+                        <div>
+                            <strong>Nayeem Basha</strong>
+                            <span>AI / ML · 1st Year</span>
+                        </div>
+
+                    </div>
+
+                    <div class="candidate-score">
+                        <strong>67%</strong>
+                        <div><span style="width:67%"></span></div>
+                    </div>
+
+                    <div class="candidate-strength">
+                        Python · SQL · HTML
+                    </div>
+
+                    <div class="candidate-gap">
+                        ML · Pandas
+                    </div>
+
+                    <button class="view-button">
+                        View →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         OPPORTUNITY MODAL
+    ========================================================== -->
+
+    <div class="modal-overlay" id="opportunityModal">
+
+        <div class="modal">
+
+            <button
+                class="modal-close"
+                onclick="closeModal()"
+            >
+                ×
+            </button>
+
+            <span class="section-label">
+                MATCH ANALYSIS
+            </span>
+
+            <h2 id="modalTitle">
+                AI / ML Intern
+            </h2>
+
+            <div class="modal-score">
+
+                <strong id="modalScore">82%</strong>
+
+                <span>
+                    current match
+                </span>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <h4>Why you match</h4>
+
+                <div class="skill-tags">
+
+                    <span class="tag matched">Python ✓</span>
+                    <span class="tag matched">SQL ✓</span>
+                    <span class="tag matched">Git ✓</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-section">
+
+                <h4>What you're missing</h4>
+
+                <div class="skill-tags">
+
+                    <span class="tag missing">Machine Learning</span>
+                    <span class="tag missing">Pandas</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="modal-insight">
+
+                <span>✦</span>
+
+                <p>
+                    Learning <strong>Pandas</strong> gives you the largest
+                    increase in opportunity readiness from your current gap.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
